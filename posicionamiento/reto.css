@@ -1,0 +1,22 @@
+.grid-content{
+    display: grid;
+    border: 5px solid #e1bee7;
+    background-color: #203204;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+    place-content: center;
+    place-items: stretch;
+}
+.item{
+    background: #ACD900;
+    font-size: 4rem;
+    display: grid;
+    place-items: end;
+}
+.item span{ 
+    background-color: #61A91B;
+    color: #fff;
+    font-family: sans-serif;
+}
