@@ -3,7 +3,7 @@
     --color-primario: #76A239;
     --color-secundario: #F49407;
     --color-terciario: #BF0000;
-
+    --button-bg: #F77D25;
     --dark: #000;
     --light: #fff;
 
@@ -34,6 +34,9 @@ a{
     text-decoration: none;
     color: var(--dark);
 }
+main{
+    margin: 2rem 0;
+}
 /* 
     * UTILITARIOS
 */
@@ -46,7 +49,17 @@ a{
 
 /*  * BLOQUES */
 .button{
-
+    background: var(--button-bg);
+    color: var(--light);
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    border: none;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+}
+.button__icon{
+    margin-left: 2rem;
 }
 
 /*
@@ -55,8 +68,9 @@ a{
 .hero{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     border: 15px dashed var(--color-primario);
-    padding: 0 2rem;
+    padding: 4rem 2rem;
 }
 .hero__content-info{
     align-self: center;
@@ -68,10 +82,14 @@ a{
 }
 .hero__description{
     font-size: 1.8rem;
+    max-width: 70%;
     line-height: 2.8rem;
     margin-bottom: 2rem;
 }
 .hero__image{
     widtH: 90%;
     display: block;
+}
+.hero__social{
+    margin-top: 4rem;
 }
