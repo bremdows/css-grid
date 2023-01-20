@@ -6,7 +6,9 @@ body{
     border: 5px solid #e1bee7;
     background: #fff1ff;
     display: grid;
-    grid-template-columns: minmax(20px, 300px) minmax(60px, 250px) minmax(20px, 300px);
-    grid-auto-rows: auto;
-    justify-content: end
+    grid-template-columns: repeat(auto-fill, 450px);
+
+}
+.item{
+    border: 2px solid violet;
 }
