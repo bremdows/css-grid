@@ -1,0 +1,77 @@
+:root{
+    /*  *COLORES */
+    --color-primario: #76A239;
+    --color-secundario: #F49407;
+    --color-terciario: #BF0000;
+
+    --dark: #000;
+    --light: #fff;
+
+    /*  *FUENTES */
+    --fuente-principal: "Roboto", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 10px is equal to 1rem */
+}
+body{
+    font: normal normal 1.6rem var(--fuente-principal);
+}
+
+/* 
+    * GENERALES
+*/
+a{
+    text-decoration: none;
+    color: var(--dark);
+}
+/* 
+    * UTILITARIOS
+*/
+.content-center{
+    max-width: 192rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*  * BLOQUES */
+.button{
+
+}
+
+/*
+    * HERO
+*/
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 15px dashed var(--color-primario);
+    padding: 0 2rem;
+}
+.hero__content-info{
+    align-self: center;
+}
+.hero__title{
+    font-size: 4.2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.hero__description{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+}
+.hero__image{
+    widtH: 90%;
+    display: block;
+}
