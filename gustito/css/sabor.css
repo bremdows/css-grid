@@ -59,7 +59,7 @@ main{
     font-weight: 700;
 }
 .button__icon{
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 /*
@@ -68,7 +68,7 @@ main{
 .hero{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
     border: 15px dashed var(--color-primario);
     padding: 4rem 2rem;
 }
@@ -86,10 +86,17 @@ main{
     line-height: 2.8rem;
     margin-bottom: 2rem;
 }
+.hero__content-image{
+    grid-area: 1 / 2 / 3 / 3;
+    border-left: 15px dashed var(--color-primario);
+}
 .hero__image{
-    widtH: 90%;
+    width: 90%;
     display: block;
 }
 .hero__social{
     margin-top: 4rem;
+}
+.hero__enlace-social{
+    margin-right: 2rem;
 }
