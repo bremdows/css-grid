@@ -4,6 +4,8 @@
     --color-secundario: #F49407;
     --color-terciario: #BF0000;
     --button-bg: #F77D25;
+    --color-icon: #2FB3C6;
+    --color-icon-favorite: #D78452;
     --dark: #000;
     --light: #fff;
 
@@ -37,6 +39,10 @@ a{
 main{
     margin: 2rem 0;
 }
+img{
+    width: 100%;
+    display: block;
+}
 /* 
     * UTILITARIOS
 */
@@ -69,8 +75,8 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr auto;
-    border: 15px dashed var(--color-primario);
     padding: 4rem 2rem;
+    margin-bottom: 4rem;
 }
 .hero__content-info{
     align-self: center;
@@ -88,7 +94,6 @@ main{
 }
 .hero__content-image{
     grid-area: 1 / 2 / 3 / 3;
-    border-left: 15px dashed var(--color-primario);
 }
 .hero__image{
     width: 90%;
@@ -99,4 +104,71 @@ main{
 }
 .hero__enlace-social{
     margin-right: 2rem;
+}
+
+/*
+    * DISHES
+*/
+.dishes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 8rem repeat(2, auto);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+.dishes__title{
+    grid-column: 1 / span 4;
+    place-self: center;
+}
+.dishes__image{
+    position: relative;
+}
+.dishes__precio{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: var(--light);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, .75);
+}
+.dishes__image img{
+    height: 100%;
+    object-fit: cover;
+}
+.dishes__image--main{
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+/*
+    MENU
+*/
+.menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 8rem auto;
+    grid-column-gap: 2rem;
+}
+.menu__title{
+    grid-column: 1 / 6;
+    place-self: center;
+    font-weight: 400;
+}
+.menu__image{
+    background: rgba(191, 0, 0, .1);
+    position: relative;
+}
+.menu__image img{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.menu__icon{
+    font-size: 1.2rem;
+    color: var(--color-icon);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.menu__icon--favorite{
+    color: var(--color-icon-favorite);
 }
