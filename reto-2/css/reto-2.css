@@ -1,0 +1,51 @@
+:root{
+
+    /* 
+        * COLORES
+    */
+    --principal-color: #1450C9;
+    --dark: #000;
+    /* 
+        * FUENTES
+    */
+    --fuente-principal: "Open Sans", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font: normal normal 1.6rem var(--fuente-principal);
+}
+a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* 
+    * BLOCK - NAVEGATION
+*/
+.nav-food{
+    display: grid;
+    grid-template-columns: auto 2fr 20rem;
+    grid-auto-rows: 8rem;
+    grid-column-gap: 2rem;
+    align-items: center;
+}
+.nav-food__logo{
+    background: var(--principal-color);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+.nav-food__nav-content{
+}
