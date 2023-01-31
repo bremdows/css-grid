@@ -1,0 +1,14 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    background: #791C78;
+}
+.item.grid-container{
+    background: #FAC3CD;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+.sub-item.grid-container{
+    background: #FFEFDC;
+}
