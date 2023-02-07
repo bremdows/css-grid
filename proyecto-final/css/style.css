@@ -1,0 +1,29 @@
+:root{
+    /* COLORES */
+
+    /* FUENTES */
+    --fuente-principal: "Roboto", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font: normal normal 1.6rem var(--fuente-pincipal);
+    background: linear-gradient(to right bottom, #9996cb, #ab99cc, #bb9dcd, #caa1cc, #d8a6cb);;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    height: 100vh;
+}
